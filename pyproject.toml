@@ -121,16 +121,6 @@ ignore_errors = true
 module = "setup"
 ignore_errors = true
 
-[[tool.mypy.overrides]]
-module = "tsvkw.toetsmodel.models"
-# Complex parsing logic with dynamic types
-warn_return_any = false
-disallow_any_expr = false
-
-[[tool.mypy.overrides]]
-module = "tsvkw.config"
-# Configuration loading from YAML - unavoidable Any returns
-warn_return_any = false
 
 [tool.uv.sources]
 deltares-hms-docs = { git = "https://github.com/Deltares-research/doc_utils.git", branch = "latex-templates" }
